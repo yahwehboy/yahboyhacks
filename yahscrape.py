@@ -7,7 +7,7 @@ headers = {
 }
 
 #gets the target website using its url
-target = requests.get('https://sabiprogrammers.com/', headers=headers ).content
+target = requests.get('https://examplesite.com/', headers=headers ).content
 
 #parse the website content using BeautifulSoup
 soup = BeautifulSoup(target, 'html.parser')
