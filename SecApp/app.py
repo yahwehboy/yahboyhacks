@@ -74,7 +74,7 @@ def dashboard():
     return render_template('dashboard.html')
 
 if __name__ == '__main__':
-    app.run(debug=True) #starts a debuger
+    app.run(debug=False) #starts a debuger if set to True
 
 #do this before running the app.py file
 #Open your terminal in the project directory
