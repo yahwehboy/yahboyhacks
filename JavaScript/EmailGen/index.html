@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>EmailGen</title>
+        <style>
+
+            body{
+                background-color: rgb(219, 243, 4);
+                color: rgb(255, 0, 0);
+            }
+            #header{
+                font-weight: bold;
+                margin-bottom: 40px;
+                text-align: center;
+            }
+            .container{
+                width: 500px;
+                height: 300px;
+                position: relative;
+                border-radius: 5px;
+                background-color: rgb(2, 2, 124);
+                padding: 20px;
+                border: 1px solid #000;
+                box-shadow: 0 0 20px rgba(0, 0, 0, 2);
+            }
+            p{
+                color: rgb(255, 0, 0);
+            }
+            label{
+                font-size: 24px;
+                font-weight: bold;
+                margin-bottom: 5px;
+                padding: 12px 12px 12px 0;
+                display: inline-block;
+            }
+            input{
+                font-size: medium;
+                width: 100%;
+                padding: 10px 20px;
+                margin: 8px 0;
+                box-sizing: border-box;
+                border-radius: 30px;
+                color: blue;
+                
+            }
+            input[type=email]:focus{
+                border: 3px solid black;
+                
+            }
+
+            button{
+                background-color: black;
+                color: blue;
+                width: 90%;
+                padding: 10px 20px;
+                border-radius: 10px;
+                font-size: medium;
+            }
+            button:hover{
+                background-color: blue;
+                color: black;
+            }
+            #print{
+                text-align: center;
+            }
+            footer{
+                text-align: center;
+                padding-bottom: 30px;
+                display: flex;
+                justify-content: space-around;
+                position: relative;
+                bottom: 0;
+                left: 0;
+                z-index: 100;
+                padding: 20px;
+                background-color: rgb(2, 2, 124);
+                border-radius: 4px;
+            }
+            a:link{
+                text-decoration: none;
+                color: red;    
+            }
+            a:hover{
+                text-decoration: underline;
+                color: red;    
+            }
+            a:visited{
+                color: rgb(219, 243, 4);    
+            }
+            span{
+                padding: 20p 80px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="header">
+            <h1>YahwehBoy Email Generator</h1>
+            <p>Generate magic emails that is redirected to your original email</p>
+        </div>
+        <center>
+            <div class="container">
+                <div id="form">
+                    <form>
+                        <label for="email">Email Address</label><br><br>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+                        <span id="warning"></span>
+                        <button type="button" id="submit">Generate</button>
+                    </form>
+                </div>
+            </div>
+        </center>
+        <div id="print"></div><br><br><br><br>
+        <footer>
+            <p>Author: YahwehBoy</p>
+            <p><a href="mailto:omotayoolaolekan01@gmail.com">omotayoolaolekan01@gmail.com</a></p>
+        </footer>
+    </body>
+    <script src="emailGen.js"></script>
+</html>
